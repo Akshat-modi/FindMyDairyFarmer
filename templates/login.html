@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <title>Login Here</title>
+</head>
+<body>
+    <!-- <div class="wrapper">
+        <h2>LogIn</h2>
+        <form action="/get_login" method="POST">
+            <div class="input-box">
+                <input required name="email" type="email" placeholder="Enter Your Email" class="input-box" />
+            </div>
+            <div class="input-box">
+                <input required name="password" type="password" placeholder="Enter Your Password" class="input-box" />
+            </div>
+            <div class="input-box button">
+                <input type="Submit" value="LogIn">
+              </div>
+        </form>
+    </div> -->
+    <div class="wrapper">
+        <h2>LogIn</h2>
+        <form action="/get_login" method="POST">
+          <div class="input-box">
+            <input type="text" placeholder="Enter your email" name="email" required>
+          </div>
+          <div class="input-box">
+            <input type="password" placeholder="Enter your password" name="password" required>
+          </div>
+          <div class="input-box button">
+            <input type="Submit" value="LogIn">
+          </div>
+        </form>
+      </div>
+</body>
+
+</html>

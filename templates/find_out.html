@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.0/mdb.min.css" rel="stylesheet" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.0/mdb.min.js"></script>
+    <title>Find The Farmer</title>
+    <style>
+        .home-link {
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <a class="home-link" href="{{url_for('index')}}">Home</a>
+    <section style="background-color: #eee;">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-12 col-lg-4 mb-4 mb-lg-0">
+                    <div class="card">
+                        <div class="d-flex justify-content-between p-3">
+                            <p class="lead mb-0">Ramu - Dewas</p>
+                        </div>
+                        <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+                            class="card-img-top" alt="Farmer-1" />
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <p class="small" class="text-muted">Products</p>
+                            </div>
+
+                            <div class="d-flex justify-content-between mb-3">
+                                <h5 class="mb-0">Milk- 1L</h5>
+                                <h5 class="text-dark mb-0">55 Rs</h5>
+                            </div>
+
+                            <div class="d-flex justify-content-between mb-3">
+                                <h5 class="mb-0">Cheese- 1Kg</h5>
+                                <h5 class="text-dark mb-0">500 Rs</h5>
+                            </div>
+
+                            <div class="d-flex justify-content-between mb-3">
+                                <h5 class="mb-0">Paneer- 1Kg</h5>
+                                <h5 class="text-dark mb-0">220 Rs</h5>
+                            </div>
+
+                            <div class="d-flex justify-content-between mb-3">
+                                <a href="{{url_for('contact_farmer')}}" class="mb-0">Contact</a>
+                            </div>
+
+                            <div class="d-flex justify-content-between mb-2">
+                                <p class="text-muted mb-0">Rating:</p>
+                                <div class="ms-auto text-warning">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+                    <div class="card">
+                        <div class="d-flex justify-content-between p-3">
+                            <p class="lead mb-0">Govardhan- Dewas</p>
+                        </div>
+                        <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+                            class="card-img-top" alt="Farmer-1" />
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <p class="small" class="text-muted">Products</p>
+                            </div>
+
+                            <div class="d-flex justify-content-between mb-3">
+                                <h5 class="mb-0">Milk- 1L</h5>
+                                <h5 class="text-dark mb-0">57 Rs</h5>
+                            </div>
+
+                            <div class="d-flex justify-content-between mb-3">
+                                <h5 class="mb-0">Cheese- 1Kg</h5>
+                                <h5 class="text-dark mb-0">520 Rs</h5>
+                            </div>
+
+                            <div class="d-flex justify-content-between mb-3">
+                                <h5 class="mb-0">Paneer- 1Kg</h5>
+                                <h5 class="text-dark mb-0">250 Rs</h5>
+                            </div>
+
+                            <div class="d-flex justify-content-between mb-3">
+                                <a href="{{url_for('contact_farmer')}}" class="mb-0">Contact</a>
+                            </div>
+
+                            <div class="d-flex justify-content-between mb-2">
+                                <p class="text-muted mb-0">Rating:</p>
+                                <div class="ms-auto text-warning">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+                    <div class="card">
+                        <div class="d-flex justify-content-between p-3">
+                            <p class="lead mb-0">Ramesh- Ratlam</p>
+                        </div>
+                        <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+                            class="card-img-top" alt="Farmer-1" />
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <p class="small" class="text-muted">Products</p>
+                            </div>
+
+                            <div class="d-flex justify-content-between mb-3">
+                                <h5 class="mb-0">Milk- 1L</h5>
+                                <h5 class="text-dark mb-0">56 Rs</h5>
+                            </div>
+
+                            <div class="d-flex justify-content-between mb-3">
+                                <h5 class="mb-0">Cheese- 1Kg</h5>
+                                <h5 class="text-dark mb-0">510 Rs</h5>
+                            </div>
+
+                            <div class="d-flex justify-content-between mb-3">
+                                <h5 class="mb-0">Paneer- 1Kg</h5>
+                                <h5 class="text-dark mb-0">210 Rs</h5>
+                            </div>
+
+                            <div class="d-flex justify-content-between mb-3">
+                                <a href="{{url_for('contact_farmer')}}" class="mb-0">Contact</a>
+                            </div>
+
+                            <div class="d-flex justify-content-between mb-2">
+                                <p class="text-muted mb-0">Rating:</p>
+                                <div class="ms-auto text-warning">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+                    <div class="card">
+                        <div class="d-flex justify-content-between p-3">
+                            <p class="lead mb-0">Krishna-Indore</p>
+                        </div>
+                        <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+                            class="card-img-top" alt="Farmer-1" />
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <p class="small" class="text-muted">Products</p>
+                            </div>
+
+                            <div class="d-flex justify-content-between mb-3">
+                                <h5 class="mb-0">Milk- 1L</h5>
+                                <h5 class="text-dark mb-0">60 Rs</h5>
+                            </div>
+
+                            <div class="d-flex justify-content-between mb-3">
+                                <h5 class="mb-0">Cheese- 1Kg</h5>
+                                <h5 class="text-dark mb-0">500 Rs</h5>
+                            </div>
+
+                            <div class="d-flex justify-content-between mb-3">
+                                <h5 class="mb-0">Paneer- 1Kg</h5>
+                                <h5 class="text-dark mb-0">240 Rs</h5>
+                            </div>
+
+                            <div class="d-flex justify-content-between mb-3">
+                                <a href="{{url_for('contact_farmer')}}" class="mb-0">Contact</a>
+                            </div>
+
+                            <div class="d-flex justify-content-between mb-2">
+                                <p class="text-muted mb-0">Rating:</p>
+                                <div class="ms-auto text-warning">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+                    <div class="card">
+                        <div class="d-flex justify-content-between p-3">
+                            <p class="lead mb-0">Kalu- Mhow</p>
+                        </div>
+                        <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+                            class="card-img-top" alt="Farmer-1" />
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <p class="small" class="text-muted">Products</p>
+                            </div>
+
+                            <div class="d-flex justify-content-between mb-3">
+                                <h5 class="mb-0">Milk- 1L</h5>
+                                <h5 class="text-dark mb-0">60 Rs</h5>
+                            </div>
+
+                            <div class="d-flex justify-content-between mb-3">
+                                <h5 class="mb-0">Cheese- 1Kg</h5>
+                                <h5 class="text-dark mb-0">490 Rs</h5>
+                            </div>
+
+                            <div class="d-flex justify-content-between mb-3">
+                                <h5 class="mb-0">Paneer- 1Kg</h5>
+                                <h5 class="text-dark mb-0">215 Rs</h5>
+                            </div>
+
+                            <div class="d-flex justify-content-between mb-3">
+                                <a href="{{url_for('contact_farmer')}}" class="mb-0">Contact</a>
+                            </div>
+
+                            <div class="d-flex justify-content-between mb-2">
+                                <p class="text-muted mb-0">Rating:</p>
+                                <div class="ms-auto text-warning">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+                    <div class="card">
+                        <div class="d-flex justify-content-between p-3">
+                            <p class="lead mb-0">Laxmikant- Mandsour</p>
+                        </div>
+                        <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+                            class="card-img-top" alt="Farmer-1" />
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <p class="small" class="text-muted">Products</p>
+                            </div>
+
+                            <div class="d-flex justify-content-between mb-3">
+                                <h5 class="mb-0">Milk- 1L</h5>
+                                <h5 class="text-dark mb-0">61 Rs</h5>
+                            </div>
+
+                            <div class="d-flex justify-content-between mb-3">
+                                <h5 class="mb-0">Cheese- 1Kg</h5>
+                                <h5 class="text-dark mb-0">550 Rs</h5>
+                            </div>
+
+                            <div class="d-flex justify-content-between mb-3">
+                                <h5 class="mb-0">Paneer- 1Kg</h5>
+                                <h5 class="text-dark mb-0">250 Rs</h5>
+                            </div>
+
+                            <div class="d-flex justify-content-between mb-3">
+                                <a href="{{url_for('contact_farmer')}}" class="mb-0">Contact</a>
+                            </div>
+
+                            <div class="d-flex justify-content-between mb-2">
+                                <p class="text-muted mb-0">Rating:</p>
+                                <div class="ms-auto text-warning">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

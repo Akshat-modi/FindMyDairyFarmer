@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{url_for('static', filename='index.css')}}">
+  <link rel="stylesheet" href="{{url_for('static', filename='script.js')}}">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <title>FindMyDairyFarmer</title>
+</head>
+
+<body>
+  <!-- <h1>Finally Welcome to main website</h1> -->
+  <!-- <div class="msg">{{ msg }}</div> -->
+  <header class="header" id="home">
+    <a href="#" class="logo" style="color: rgb(197, 59, 184)">FindMyDairyFarmer</a>
+    <nav class="nav-items">
+      <a href="#home" style="color: rgb(197, 59, 184);">Home</a>
+      <a href="#about-us" style="color: rgb(197, 59, 184);">About-Us</a>
+      <a href="#find-out" style="color: rgb(197, 59, 184);">Find-Out</a>
+      <a href="#contact-us" style="color: rgb(197, 59, 184);">Contact-Us</a>
+      <a href="{{url_for('logout')}}" style="color: rgb(197, 59, 184);">Logout</a>
+    </nav>
+  </header>
+  <!-- carousal -->
+  <div class="carousel">
+    <div class="viewport">
+      <div class="slide-container">
+        <div class="slide-3">
+        </div>
+      </div>
+      <div class="slide-container">
+        <div class="slide-2">
+        </div>
+      </div>
+      <div class="slide-container">
+        <div class="slide-1">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- about us section -->
+  <div class="about-section" id="about-us">
+    <h1>About Us Page</h1>
+    <p style="color: grey;">FindMyDairyFarmer is a platform that connects dairy farmers with consumers. Our mission is
+      to provide consumers with access to fresh, high-quality dairy products while supporting small-scale dairy farmers.
+    </p>
+    <p style="color: grey;">We believe in the importance of sustainable agriculture and are committed to promoting
+      ethical and environmentally-friendly farming practices.</p>
+  </div>
+
+  <h2 style="text-align:center; margin: 0; color: rgb(197, 59, 184);">Our Team</h2>
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80" alt="Jane" style="width:80%; border-radius: 55px; padding: 15px; margin: 5px;">
+        <div class="container" style="width: 320px;">
+          <h2>Jane Doe</h2>
+          <p class="title">CEO & Founder</p>
+          <p>Leading the company towards a brighter future, with passion and innovation.</p>
+          <p>jane@example.com</p>
+          <p><button class="button" onclick="showPopup1()">Contact</button></p>
+          <script>
+            function showPopup1(){
+              alert("Contact me on: 123456789");
+            }
+          </script>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80" alt="Mike" style="width:80%; border-radius: 55px;padding: 15px; margin: 5px;">
+        <div class="container" style="width: 320px;">
+          <h2>Mike Ross</h2>
+          <p class="title">Marketing Manager</p>
+          <p>Bringing our products to the people, through creative and effective marketing strategies..</p>
+          <p>mike@example.com</p>
+          <p><button class="button" onclick="showPopup2()">Contact</button></p>
+          <script>
+            function showPopup2(){
+              alert("Contact me on: 123456789");
+            }
+          </script>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80" alt="John" style="width:80%; border-radius: 55px;padding: 15px; margin: 5px;">
+        <div class="container" style="width: 320px;">
+          <h2>John Doe</h2>
+          <p class="title">Customer Support</p>
+          <p>Dedicated to providing exceptional service, and ensuring every customer's needs are met.</p>
+          <p>john@example.com</p>
+          <p><button class="button"  onclick="showPopup3()">Contact</button></p>
+          <script>
+            function showPopup3(){
+              alert("Contact me on: 123456789");
+            }
+          </script>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- find-out section  -->
+  <div class="find-out-section" id="find-out">
+    <div class="find-out-image">
+      <img src="https://yt3.googleusercontent.com/434PGYwLjBhVpzqoEv6_grx6dNRL2orZm3JQWCnFg1L1pR3ko14XNUuP0wUWScE9FhTrM0ymbQ=s900-c-k-c0x00ffffff-no-rj" >
+    </div>
+    <div class="text">
+      <h1>Let's Find-Out the Best Farmer</h1>
+      <p>The find-out section of our website allows users to search for and connect with dairy farmers in their area.</p>
+      <a href="{{url_for('find_out')}}">Find-Out</a>
+    </div>
+  </div>
+
+
+   <!-- contact-us section  -->
+   <div class="contact-section" id="contact-us">
+      <div class="bg-img">
+        <form action="/contact" class="contact-container" method="POST">
+          <h1 style="margin: 15px; padding: 15px; color: #dbd81b;">Contact-Us</h1>
+      
+          <label for="Name"><b>Name</b></label>
+          <input type="text" placeholder="Enter Name" name="name" required>
+      
+          <label for="email"><b>Email</b></label>
+          <input type="email" placeholder="Enter Email" name="email" required>
+
+          <label for="Message"><b>Message</b></label>
+          <input type="text" placeholder="Enter Message" name="Message" required>
+
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+    </div>
+   </div>
+
+</body>
+</body>
+
+</html>

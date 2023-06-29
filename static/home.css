@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+video{
+    pointer-events: none;
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+}
+h1{
+    background: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    padding: 20px;
+    font-size: 3rem;
+}
+a{
+    background: none;
+    position: absolute;
+    border: 5px black solid;
+    border-radius: 25px;
+    top: 95%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    padding: 20px;
+    font-size: 20px;
+    text-decoration: none;
+}
+.second{
+    position: absolute;
+    top: 95%;
+    left: 61%;
+    transform: translate(-50%, -50%);
+}
+a:hover{
+    background-color: black;
+}
